@@ -1,0 +1,15 @@
+HTCDEV Kernel Building Script 
+===========
+This script is designed to create a .zip to flash of the Harmonia kernel. This script was designed to make life easier and quickly allow you to edit the init.rc file with ease
+
+Building the Kernel
+---------------
+Edit buildkernel.sh varibles based on your directory structure
+
+Now run the following command from inside buildkernel dir
+
+    sh ./buildkernel.sh
+
+How the script works
+---------------
+The script simple builds against the ramdisk/boot.img-ramdisk and wraps around the kernel. To make changes simply edit the ramdisk/boot.img-ramdisk/init* files and then run the script.
